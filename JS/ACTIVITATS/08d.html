@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			var sal=prompt('Enter the worker salary: ');
+			var old=prompt('Enter the number of years did the worker work in the company: ');
+			if (sal<500 && old>=10) {
+				var newsal=sal*0.2
+				var newsal2=parseInt(newsal)+parseInt(sal)
+				document.write('The salary of the next month for the worker is ');
+				document.write(newsal2);
+			} else if (sal<500 && old<10) {
+				var newsal=sal*0.05
+				var newsal2=parseInt(newsal)+parseInt(sal)
+				document.write('The salary of the next month for the worker is ');
+				document.write(newsal2);
+			} else {
+				document.write('The salary of the next month for the worker is ');
+				document.write(sal);
+			}
+		</script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript"></script>
+	</body>
+</html>
