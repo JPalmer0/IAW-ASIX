@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var x=1;
+        var base=0;
+        var height=0;
+        var count=0;
+        for(x=1;x<=3;x++) {
+            base=prompt('Enter the base of the triangle '+x,'0');
+            height=prompt('Enter the height of triangle '+x,'0');
+            var area=(parseInt(base)*parseInt(height))*0.5;
+            document.write('Triangle number '+x+' has a base of '+base+' and a height of '+height);
+            document.write('<br>');
+            document.write('Triangle number '+x+' has an area of  '+area);
+            document.write('<br>');
+        if (area>=12)
+            {
+                count=count+1;
+            }
+        }
+    document.write("There are "+count+' triangle(s) with an area of 12 or higher');
+    </script>
+</body>
+</html>
