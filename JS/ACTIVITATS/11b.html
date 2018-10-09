@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var sex=0;
+        var fem=0;
+        var mal=0;
+        var sum=0;
+        var totalm=0;
+        var legal=0;
+        var max=0;
+        do {
+            id=prompt('Enter ID ','');
+            sum=sum+1
+            edad=prompt('Enter age ','');
+            sex=prompt('Enter sex ','');
+            document.write('ID: '+id+' / Age: '+edad+' / Sex: '+sex);
+            document.write('<br>');
+        if (sex=='m' && edad<18 || edad>65)
+        {
+            mal=mal+1;
+        }
+        else if (sex=='m' && edad>=18 && edad<=65)
+        {
+            legal=legal+1;
+        }
+        else if (sex=='f')
+        {    
+            fem=fem+1;
+        }
+        } while (id!=0);
+
+        totalm=parseInt(mal)+parseInt(legal);
+        document.write('<br>');
+        document.write("There's "+fem+' women');
+        document.write('<br>');
+        document.write("There's "+legal+' men between 18 and 65 years old');
+        document.write('<br>');
+        document.write("There's "+totalm+' men in total');
+        document.write('<br>');
+        document.write('<br>');
+        document.write('Total sum (men and women): '+sum);
+    </script>
+</body>
+</html>

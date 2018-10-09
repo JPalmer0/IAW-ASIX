@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x=0;
+		var suma=0
+		do {
+			x=prompt('Enter a number: ','0');
+			sum=parseInt(suma)+parseInt(x);
+			document.write('Number introduced: '+x);
+			document.write('');
+	} while(x!=9999);
+
+	document.write('TOTAL SUMA IS: '+suma);
+	document.write('<br>');
+	if (suma<0)
+		{
+			x=document.write('YOUR NUMBER IS NEGATIVE');
+		}
+		else if (suma==0)
+		{
+			x=document.write('YOUR NUMBER IS ZERO');
+		}
+		else if (suma>0)
+		{
+			x=document.write('YOUR NUMBER ISPOSITIVE');
+		}
+	</script>
+</body>
+</html>
