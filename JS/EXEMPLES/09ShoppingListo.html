@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SHOPPING LIST</title>
+		<script>
+			function printList(){
+				var txt="";
+				for(var i=0; i<llistaCompra.length; i++){
+					txt = txt + "<li>" + llistaCompra[i]+ "</li>";
+				}
+				var u = document.getElementById("llista");
+				u.innerHTML = txt;
+			}
+			function afegirInici(){
+				var nou = document.getElementById("item").value;
+				llistaCompra.unshift(nou);
+				printList();
+			}
+
+			function afegirFinal(){
+				var fi= document.getElementById("item").value;
+				llistaCompra.push(fi);
+				printList();
+			}
+
+			function llevarPrimer(){
+				var primer= document.getElementById("item").value;
+				llistaCompra.shift(primer);
+				printList();
+			}
+
+			function llevatDarrer(){
+				var darrer= document.getElementById("item").value;
+				llistaCompra.shift(darrer);
+				printList();
+			}
+
+			function sort() {
+				llistaCompra.sort();
+				printList();
+			}
+		</script>
+	</head>
+	<body>
+		<h3>Shopping List</h3>
+		<ul id="llista">
+		</ul>
+		<hr/>
+		ITEM:<input type="text" id="item" /><br/><br/>
+		<button onclick="afegirInici()">AFEGIR INICI</button>
+		<button onclick="afegirFinal()">AFEGIR FINAL</button>
+		<button onclick="llevarPrimer()">LLEVAR PRIMER</button>
+		<button onclick="llevarDarrer()">LLEVAR DARRER</button>
+		<button onclick="sort()">ORDENAR</button>
+		<script>
+			var llistaCompra = new Array();
+			llistaCompra[0]="POTATOES";
+			llistaCompra[1]="MILK";
+			printList();
+		</script>
+	</body>
+</html>
