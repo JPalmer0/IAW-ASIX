@@ -3,102 +3,25 @@
 	<head>
 		<title></title>
 		<script type="text/javascript">
-			var i0=prompt('Enter the mark of student 1');
-			var i1=prompt('Enter the mark of student 2');
-			var i2=prompt('Enter the mark of student 3');
-			var i3=prompt('Enter the mark of student 4');
-			var i4=prompt('Enter the mark of student 5');
-			var i5=prompt('Enter the mark of student 6');
-			var i6=prompt('Enter the mark of student 7');
-			var i7=prompt('Enter the mark of student 8');
-			var i8=prompt('Enter the mark of student 9');
-			var i9=prompt('Enter the mark of student 10');
-			var pass=0
-			
-			while (i0 >= 5) {
-    			 pass= pass+1
+
+
+			var aprovats=0;
+			var suspesos=0;
+			var i=0;
+			while(i<10){
+				var nota = prompt("Enter your mark");
+				if(parseInt(nota)>=5){
+					aprovats++
+				
+				} else {
+					suspesos++
+				}
+				i++;
 			}
 
-			while (i1 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i2 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i3 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i4 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i5 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i6 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i7 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i8 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i9 >= 5) {
-    			 pass= pass+1
-			}
-
-			while (i0 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i1 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i2 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i3 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i4 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i5 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i6 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i7 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i8 < 5) {
-    			 fail= fail+1
-			}
-
-			while (i9 < 5) {
-    			 fail= fail+1
-			}
-
-			document.write(pass);
-			document.write(fail);
-
-
+			document.write('There are '+aprovats+' students who passed the exam');
+			document.write('<br>')
+			document.write('There are '+suspesos+' students who do not passed the exam');
 
 		</script>
 	</head>
