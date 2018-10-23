@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript">
+			var n= prompt("Enter N number to make a vector");
+			var n1= prompt("Enter the first number of your vector");
+			var n2= prompt("Enter the second number of your vector");
+			var num = new Array();
+			num.unshift(n1);
+			num.pop(n2);
+			for(var i=2; i<parseInt(n); i++){
+				num[i] = num[i-1] + num[i-2]
+			}
+		</script>
+	</body>
+</html>
