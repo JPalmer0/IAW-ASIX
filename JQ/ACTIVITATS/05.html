@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<h1>HEADLINE 1</h1>
+		<p class="odd">PARAGRAPH 1</p>
+		<h1>HEADLINE 2</h1>
+		<p>PARAGRAPH 2</p>
+		<h1>HEADLINE 3</h1>
+		<p class="odd">PARAGRAPH 3</p>
+		<h1>HEADLINE 4</h1>
+		<p>PARAGRAPH 4</p>
+		<h1>HEADLINE 5</h1>
+		<p class="odd">PARAGRAPH 5</p>
+		<button id="button1">SMALL</button>
+		<button id="button2">MEDIUM</button>
+		<button id="button3">BIG</button>
+	</body>
+	<script>
+	$(document).ready(function(){
+		$("#button1").click(function(){
+			$(".odd").css("font-size", "10px");
+		});
+		$("#button2").click(function(){
+			$(".odd").css("font-size", "15px");
+		});
+		$("#button3").click(function(){
+			$(".odd").css("font-size", "20px");
+		});
+ 	});
+	</script>
+</html>

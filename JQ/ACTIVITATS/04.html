@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<table id="one">
+			<tr>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+			</tr>
+		</table>
+		<table id="two">
+			<tr>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+			</tr>
+		</table>
+	</body>
+	<script>
+	$(document).ready(function(){
+		$("#one").click(function(){
+			$(this).css("background-color", "red");
+		});
+		$("#two").click(function(){
+			$(this).css("font-size", "40px");
+		});
+ 	});
+	</script>
+</html>

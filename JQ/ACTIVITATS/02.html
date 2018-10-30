@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js">
+		</script>
+	</head>
+	<body>
+		<h1></h1>
+		<table>
+			<tr id="one">
+				<td>11111111111</td>
+			</tr>
+			<tr id="two">
+				<td>22222222222</td>
+			</tr>
+		</table>
+		<script>
+			$(document).ready(function(){
+
+				$("#one").click(function(){
+					$(this).css("background-color", "red");
+				});
+
+				$("#two").click(function(){
+					$(this).css("background-color", "yellow");
+				});
+
+
+			});
+		</script>
+	</body>
+</html>
