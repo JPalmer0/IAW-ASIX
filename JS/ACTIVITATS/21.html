@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			function fun(){
+			var n1=document.getElementById('t1').value;
+			var n2=document.getElementById('t2').value;
+			if (n1 == n2) {
+				alert('The passwords are the same value');
+			}
+			else
+				alert('The passwords are not the same value');
+		}
+		</script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript">
+			
+		</script>
+		<form>
+			Introduce a password:<br>
+			<input type="password" name="field" id="t1">
+			<br><br>
+			Repeat your password:<br>
+			<input type="password" name="field" id="t2">
+			<br>
+		</form>
+		<br><br>
+		<button onclick="fun()">Validate if passwords are the same</button>
+	</body>
+</html>

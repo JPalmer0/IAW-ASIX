@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			function pizzas() {
+            var op=document.getElementById("pizza");
+            document.getElementById("t").value=op.options[op.selectedIndex].value;
+        }
+		</script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript">
+			
+		</script>
+		<form>
+        <select id="pizza" onChange="pizzas()">
+            <option value="0 €">Select an option</option><br>
+            <option value="6 €">Pepperoni</option><br>
+            <option value="5 €">Quatro Formaggi</option><br>
+            <option value="4 €">Procciuto</option><br>
+        </select><br>
+        Precio:<input type="text" id="t">
+    </form>
+	</body>
+</html>

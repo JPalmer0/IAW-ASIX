@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript">
+			function func(){
+			var m1=document.getElementById('t1').value;
+			var m2=document.getElementById('t2').value;
+			if (m1>m2) {
+				alert(m1+' is bigger than '+m2)
+			}
+			else if (m1<m2) {
+				alert(m2+' is bigger than '+m1)
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript">
+			
+		</script>
+		<form>
+		Introduce one number:<br>
+		<input type="text" name="field" id="t1">
+		<br><br>
+		Introduce another number:<br>
+		<input type="text" name="field" id="t2">
+		</form>
+		<button onclick="func()">Which number is bigger?</button>
+	</body>
+</html>
