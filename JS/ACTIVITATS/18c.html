@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript">
+			var a=prompt('Enter a word: ');
+			var pal=true;
+			var i1=0;
+			var i2=a.lenght - 1;
+
+			while (i1<i2) {
+				if (a.charAt(i1) != a.charAt(i2)){
+					pal=false; break;
+				}
+				i1++;
+				i2--;
+			}
+			if (pal==true) {
+				document.write("Es un palindrom")
+			} else {
+				document.write("No es un palindrom")
+			}
+		</script>
+	</body>
+</html>
