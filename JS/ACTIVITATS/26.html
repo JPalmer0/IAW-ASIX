@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script type="text/javascript"></script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<script type="text/javascript">
+			function validation() {
+            var a=document.getElementById("pass").value;
+            if (a.length<7) {
+                alert('Error, your password does not have at least 7 characters');
+            }
+            else if (a.length>20) {
+                alert('Error, your password has more than 20 characters');
+            }
+            else
+                alert('Account accepted and validated');
+        }
+		</script>
+		Username:<br><br>
+        <input type="text" id="usr"><br><br><br>
+        Password:<br><br>
+        <input type="password" id="pass"><br><br>
+        <button id="check" onclick="validation()">Check</button>
+	</body>
+</html>
