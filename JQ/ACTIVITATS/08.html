@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.s1 {
+		background-color: blue;
+	}
+	.s2 {
+		background-color: yellow;
+	}
+</style>
+<body>
+<table>
+	<thead>
+		<tr>
+			<td>THEAD 1</td>
+			<td>THEAD 2</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>TBODY 1</td>
+			<td>TBODY 2</td>
+		</tr>
+	</tbody>
+</table>
+<button id="button1">Click me THEAD</button>
+<button id="button2">Click me TBODY</button>
+<script>
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("thead").addClass("s1");
+    $("tbody").addClass("s2");
+  });
+});
+
+$(document).ready(function(){
+  $("#button2").click(function(){
+    $("thead").removeClass();
+    $("tbody").removeClass();
+  });
+});
+</script>
+</body>
+</html>

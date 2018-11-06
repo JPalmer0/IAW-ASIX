@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body>
+		<h1></h1>
+		<p></p>
+		<table>
+			<tr>
+				<td class="onetd">OFF</td>
+				<td class="onetd">OFF</td>
+				<td class="onetd">OFF</td>
+			</tr>
+			<tr>
+				<td class="onetd">OFF</td>
+				<td class="onetd">OFF</td>
+				<td class="onetd">OFF</td>
+			</tr>
+			<tr>
+				<td class="onetd">OFF</td>
+				<td class="onetd">OFF</td>
+				<td class="onetd">OFF</td>
+			</tr>
+		</table>
+				<table>
+			<tr>
+				<td>OFF</td>
+				<td>OFF</td>
+				<td>OFF</td>
+			</tr>
+			<tr>
+				<td>OFF</td>
+				<td>OFF</td>
+				<td>OFF</td>
+			</tr>
+			<tr>
+				<td>OFF</td>
+				<td>OFF</td>
+				<td>OFF</td>
+			</tr>
+		</table>
+		<button id="one">PRESS THE BUTTON</button>
+	</body>
+	<script>
+	$(document).ready(function(){
+		$("#one").click(function(){
+		$(".onetd").text("ON");
+		});
+ 	});
+	</script>
+</html>

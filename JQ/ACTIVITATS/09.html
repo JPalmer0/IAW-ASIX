@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	PRESS THE BUTTONS
+<button id="b1">Click me</button>
+<button id="b2">Click me</button>
+<script>
+$(document).ready(function(){
+  $("#b1").click(function(){
+    alert($("head").html());
+  });
+});
+$(document).ready(function(){
+  $("#b2").click(function(){
+    alert($("body").html());
+  });
+});
+</script>
+</body>
+</html>

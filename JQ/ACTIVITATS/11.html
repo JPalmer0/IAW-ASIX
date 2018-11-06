@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.s1 {
+		background-color: blue;
+	}
+	.s2 {
+		background-color: yellow;
+	}
+</style>
+<body>
+<table>
+		<tr>
+			<td>MOVE YOUR CURSON ON ME</td>
+			<td>MOVE YOUR CURSON ON ME</td>
+		</tr>
+		<tr>
+			<td>MOVE YOUR CURSON ON ME</td>
+			<td>MOVE YOUR CURSON ON ME</td>
+		</tr>
+</table>
+<script>
+$(document).ready(function(){
+  $("td").mouseover(function(){
+	$(this).css("background-color","red");
+  });
+});
+
+$(document).ready(function(){
+  $("td").mouseout(function(){
+	$(this).css("background-color","white");
+  });
+});
+
+</script>
+</body>
+</html>
