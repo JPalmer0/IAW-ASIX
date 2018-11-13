@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	input {color: blue;}
+</style>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" name=""><br>
+<input type="text" name="">
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $("input").css("color" , "yellow");
+  });
+});
+
+$(document).ready(function(){
+  $("input").blur(function(){
+    $("input").css("color" , "blue");
+  });
+});
+</script>
+</body>
+</html>
