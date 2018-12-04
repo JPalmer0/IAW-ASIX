@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+</style>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1>jQuery Methods to manage DOM Elements.</h1>
+ 		<ul>
+	<li>First item.</li>
+	<li>Second item.</li>
+ 	<li>Third item.</li>
+ 	<li>Fourth item.</li>
+ 		</ul>
+<button id="1">CREATE TEXT FIELD</button>
+<script>
+$(document).ready(function(){
+	$("#1").click(function(){
+		$(this).append("<li>Another item at the end.</li>")
+
+	})
+});
+</script>
+</body>
+</html>
