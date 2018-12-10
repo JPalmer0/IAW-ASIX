@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="i1">
+		<p>You can not see me now!!</p><p>You can not see me now!!</p><p>You can not see me now!!</p><p>You can not see me now!!</p><p>You can not see me now!!</p>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#i1").click(function(){
+				$(this).fadeTo(1000,0.2,double);
+			});
+			function double() {
+				$("#i1").dblclick(function(){
+					$(this).fadeTo(1000,1);
+				});
+			};
+		});
+	</script>
+</body>
+</html>

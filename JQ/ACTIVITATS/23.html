@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<a href="www.youtube.com">www.youtube.com</a><br>
+	<a href="www.google.es">ww.google.es</a><br>
+	<a href="www.gmail.com">www.gmail.com</a><br>
+	<a href="www.twitter.com">www.twitter.com</a>
+	<script>
+	$(document).ready(function(){
+		var x=$("a").indexOf(".es");
+		if (x!=-1) {
+			$(this).css("background-color","#ff0000");
+		}
+	});
+	</script>
+</body>
+</html>
