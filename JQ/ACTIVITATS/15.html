@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+	<script>
+		$(document).ready(function(){
+			$("#box").dblclick(function(){
+				$(this).css("height","250px","width","250px");
+			});
+		});
+	</script>
+	<div style="height: 70px; width: 800px; background-color: lightgreen; text-align: center;" id="box">Double click to resize</div>
+</body>
+</html>
