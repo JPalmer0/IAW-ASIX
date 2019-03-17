@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Base de dades</title>
+    <style>
+        * {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>REBAJAR GANGAS</h1>
+
+<?php
+$con = mysqli_connect("localhost","root","","shop");
+$sql=" SELECT * FROM article order by code asc ";
+$rs=mysqli_query($con, $sql);
+?>
+<form action="21d.php" method="GET">
+    <input type="submit" value="send" /> <br>
+</form>
+</body>
+</html>
